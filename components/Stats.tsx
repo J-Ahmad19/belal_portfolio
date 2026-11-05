@@ -43,7 +43,7 @@ export default function Stats({ stats }: StatsProps) {
       ref={root}
       className="border-y border-[var(--line)] bg-soft/40 backdrop-blur-sm"
     >
-      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-14 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-10 xs:px-6 sm:gap-8 sm:py-14 lg:grid-cols-4">
         {stats.map((s, idx) => (
           <motion.div
             key={s.id || s.label}
@@ -52,15 +52,15 @@ export default function Stats({ stats }: StatsProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.45, delay: idx * 0.08 }}
             whileHover={{ y: -3 }}
-            className="group border-l-2 border-brand/40 pl-5 transition-colors hover:border-brand"
+            className="group border-l-2 border-brand/50 pl-3 sm:pl-5 transition-colors hover:border-brand"
           >
-            <p className="text-4xl md:text-5xl font-black tracking-tight text-ink">
+            <p className="text-3xl font-black tracking-tight text-ink xs:text-4xl sm:text-4xl md:text-5xl">
               <span data-v={s.value} data-d={s.decimals}>
                 {s.value}
               </span>
               <span className="text-brandStrong ml-0.5">{s.suffix}</span>
             </p>
-            <p className="mt-2 text-sm font-medium leading-relaxed text-body">
+            <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm font-medium leading-relaxed text-body line-clamp-2">
               {s.label}
             </p>
           </motion.div>

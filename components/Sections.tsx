@@ -40,7 +40,7 @@ export function Research({ items }: ResearchProps) {
         </p>
       </motion.div>
 
-      <div className="mt-12 grid gap-12 lg:grid-cols-2">
+      <div className="mt-10 sm:mt-12 grid gap-8 lg:gap-12 lg:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -49,18 +49,18 @@ export function Research({ items }: ResearchProps) {
           className="flex flex-col justify-between"
         >
           <div>
-            <h3 className="text-2xl font-bold text-ink">{project.title}</h3>
-            <p className="mt-2 text-sm font-semibold text-ink/75">{project.meta}</p>
-            <p className="mt-6 leading-relaxed text-body">{project.description}</p>
+            <h3 className="text-xl sm:text-2xl font-bold text-ink">{project.title}</h3>
+            <p className="mt-2 text-xs sm:text-sm font-semibold text-ink/75">{project.meta}</p>
+            <p className="mt-5 sm:mt-6 text-sm sm:text-base leading-relaxed text-body">{project.description}</p>
             {project.note && (
-              <div className="mt-6 border-l-2 border-brand/70 bg-soft/60 p-4 font-bold text-ink rounded-r-sm">
+              <div className="mt-5 sm:mt-6 border-l-2 border-brand/70 bg-soft/60 p-3.5 sm:p-4 text-xs sm:text-sm font-bold text-ink rounded-r-sm">
                 {project.note}
               </div>
             )}
           </div>
 
           {project.certificateLink && (
-            <div className="mt-8 border-t border-[var(--line)] pt-6 flex flex-wrap items-center gap-3">
+            <div className="mt-6 sm:mt-8 border-t border-[var(--line)] pt-5 sm:pt-6 flex flex-wrap items-center gap-2.5 sm:gap-3">
               <motion.a
                 href={getDriveViewUrl(project.certificateLink)}
                 target="_blank"
@@ -68,7 +68,7 @@ export function Research({ items }: ResearchProps) {
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 aria-label={`Open ${project.certificateLabel || "Project Certificate"} on Google Drive (new tab)`}
-                className="group inline-flex items-center gap-2 border border-[var(--line)] bg-surface px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-ink transition-all hover:border-brand hover:bg-brand hover:text-[#111110] rounded-sm shadow-sm"
+                className="group inline-flex items-center gap-2 border border-[var(--line)] bg-surface px-3.5 sm:px-4 py-2 sm:py-2.5 text-xs font-bold uppercase tracking-wider text-ink transition-all hover:border-brand hover:bg-brand hover:text-[#111110] rounded-sm shadow-sm"
               >
                 <svg
                   className="h-4 w-4 shrink-0"
@@ -103,7 +103,7 @@ export function Research({ items }: ResearchProps) {
                     url: project.certificateLink!,
                   })
                 }
-                className="border border-[var(--line)] bg-surface px-3 py-2.5 text-xs font-semibold text-body hover:text-ink hover:border-brand rounded-sm"
+                className="border border-[var(--line)] bg-surface px-3 py-2 sm:py-2.5 text-xs font-semibold text-body hover:text-ink hover:border-brand rounded-sm"
               >
                 Preview
               </button>
@@ -111,7 +111,7 @@ export function Research({ items }: ResearchProps) {
           )}
         </motion.div>
 
-        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+        <div className="grid gap-3.5 sm:gap-4 sm:grid-cols-3 lg:grid-cols-1">
           {project.resultRows.map((r, idx) => (
             <motion.div
               key={r.label}
@@ -120,13 +120,13 @@ export function Research({ items }: ResearchProps) {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
               whileHover={{ y: -2 }}
-              className="flex items-center justify-between border border-[var(--line)] bg-surface p-6 shadow-sm rounded-sm"
+              className="flex items-center justify-between border border-[var(--line)] bg-surface p-4 sm:p-6 shadow-sm rounded-sm"
             >
-              <div>
-                <p className="font-bold text-ink">{r.label}</p>
-                <p className="text-sm text-body">{r.range}</p>
+              <div className="min-w-0 pr-2">
+                <p className="font-bold text-ink text-sm sm:text-base">{r.label}</p>
+                <p className="text-xs sm:text-sm text-body truncate">{r.range}</p>
               </div>
-              <p className="bg-brand px-3 py-1 text-2xl font-black text-[#111110] rounded-sm">
+              <p className="bg-brand px-2.5 sm:px-3 py-1 text-lg sm:text-2xl font-black text-[#111110] rounded-sm shrink-0">
                 {r.percentage}
               </p>
             </motion.div>
@@ -176,7 +176,7 @@ export function Skills({ skills }: SkillsProps) {
         </p>
       </motion.div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2">
+      <div className="mt-10 sm:mt-12 grid gap-5 sm:gap-6 grid-cols-1 md:grid-cols-2">
         {skills.map((g, idx) => (
           <motion.div
             key={g.id || g.groupName}
@@ -184,10 +184,10 @@ export function Skills({ skills }: SkillsProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: idx * 0.08 }}
-            className="border border-[var(--line)] bg-surface p-7 rounded-sm shadow-sm"
+            className="border border-[var(--line)] bg-surface p-5 sm:p-7 rounded-sm shadow-sm"
           >
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-bold text-ink">{g.groupName}</h3>
+              <h3 className="text-base sm:text-lg font-bold text-ink">{g.groupName}</h3>
               {g.certificateLink && (
                 <a
                   href={getDriveViewUrl(g.certificateLink)}
@@ -199,13 +199,13 @@ export function Skills({ skills }: SkillsProps) {
                 </a>
               )}
             </div>
-            <ul className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap gap-1.5 sm:gap-2">
               {g.skills.map((s) => (
                 <motion.li
                   key={s}
                   whileHover={{ scale: 1.04, y: -1 }}
                   transition={{ type: "spring", stiffness: 350 }}
-                  className="border border-[var(--line)] bg-soft/70 px-3 py-1.5 text-xs font-semibold text-ink transition-colors hover:border-brand hover:bg-brand hover:text-[#111110] rounded-sm"
+                  className="border border-[var(--line)] bg-soft/70 px-2.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs font-semibold text-ink transition-colors hover:border-brand hover:bg-brand hover:text-[#111110] rounded-sm"
                 >
                   {s}
                 </motion.li>
@@ -258,14 +258,14 @@ export function Awards({ awards }: AwardsProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: idx * 0.06 }}
-            className="grid items-start gap-4 border-b border-[var(--line)] py-6 transition-colors hover:bg-soft/30 md:grid-cols-[1fr_2fr_auto] md:items-center md:px-3"
+            className="flex flex-col sm:grid sm:grid-cols-[1fr_2fr] md:grid-cols-[1.2fr_2fr_auto] gap-3 sm:gap-4 border-b border-[var(--line)] py-5 sm:py-6 transition-colors hover:bg-soft/30 items-start md:items-center px-1 sm:px-3"
           >
             <span className="text-base font-bold text-ink">{award.title}</span>
-            <span className="text-sm leading-relaxed text-body">
+            <span className="text-xs sm:text-sm leading-relaxed text-body">
               {award.description}
             </span>
             {award.driveLink ? (
-              <div className="flex items-center gap-2 md:self-center">
+              <div className="flex items-center gap-2 mt-2 sm:mt-0 md:self-center">
                 <motion.a
                   href={getDriveViewUrl(award.driveLink)}
                   target="_blank"
@@ -273,7 +273,7 @@ export function Awards({ awards }: AwardsProps) {
                   whileHover={{ scale: 1.02, y: -1 }}
                   whileTap={{ scale: 0.98 }}
                   aria-label={`Open ${award.linkText || "Document"} on Google Drive (new tab)`}
-                  className="group inline-flex items-center justify-center gap-1.5 border border-[var(--line)] bg-surface px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-ink transition-all hover:border-brand hover:bg-brand hover:text-[#111110] rounded-sm shadow-sm"
+                  className="group inline-flex items-center justify-center gap-1.5 border border-[var(--line)] bg-surface px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-ink transition-all hover:border-brand hover:bg-brand hover:text-[#111110] rounded-sm shadow-sm"
                 >
                   <span>{award.linkText || "View Document"}</span>
                   <svg
@@ -287,7 +287,7 @@ export function Awards({ awards }: AwardsProps) {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M10 6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm1 7V3.5L18.5 7H15zM8 17h8v2H8v-2zm0-4h8v2H8v-2zm0-4h4v2H8V9z"
+                      d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm1 7V3.5L18.5 7H15zM8 17h8v2H8v-2zm0-4h8v2H8v-2zm0-4h4v2H8V9z"
                     />
                   </svg>
                 </motion.a>
@@ -330,16 +330,16 @@ interface ContactProps {
 export function Contact({ profile }: ContactProps) {
   return (
     <section id="contact" className="bg-[#111110] text-[#FFFFFF]">
-      <div className="mx-auto max-w-6xl px-6 py-24">
+      <div className="mx-auto max-w-6xl px-4 py-16 xs:px-6 sm:py-24">
         {/* Profile Card Header in Contact */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-10 flex flex-col sm:flex-row sm:items-center gap-5 border-b border-white/10 pb-10"
+          className="mb-8 sm:mb-10 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 border-b border-white/10 pb-8 sm:pb-10"
         >
-          <div className="relative h-20 w-20 md:h-24 md:w-24 shrink-0 overflow-hidden rounded-full ring-2 ring-brand ring-offset-2 ring-offset-[#111110] shadow-xl">
+          <div className="relative h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 shrink-0 overflow-hidden rounded-full ring-2 ring-brand ring-offset-2 ring-offset-[#111110] shadow-xl">
             <Image
               src={profile.profilePhoto || "/belal-profile.jpg"}
               alt={profile.name}
@@ -349,14 +349,14 @@ export function Contact({ profile }: ContactProps) {
               className="h-full w-full object-cover"
             />
           </div>
-          <div>
+          <div className="min-w-0">
             <div className="mb-1.5 flex items-center gap-2">
-              <span className="inline-block h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-[11px] font-bold uppercase tracking-widest text-brand">
+              <span className="inline-block h-2 w-2 shrink-0 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-brand truncate">
                 {profile.availability}
               </span>
             </div>
-            <h3 className="text-2xl font-black text-white tracking-tight">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight truncate">
               {profile.name}
             </h3>
             <p className="mt-1 text-xs text-white/70 max-w-xl leading-relaxed">
@@ -370,7 +370,7 @@ export function Contact({ profile }: ContactProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="max-w-2xl text-4xl font-black tracking-tight text-white md:text-5xl"
+          className="max-w-2xl text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl break-words"
         >
           Hiring for site, QA/QC or quantity surveying? Let's talk.
         </motion.h2>
@@ -380,12 +380,12 @@ export function Contact({ profile }: ContactProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-10 flex flex-wrap gap-3 sm:gap-4"
+          className="mt-8 sm:mt-10 flex flex-col xs:flex-row flex-wrap gap-2.5 sm:gap-4"
         >
           <motion.a
             whileHover={{ scale: 1.03, y: -2 }}
             whileTap={{ scale: 0.97 }}
-            className="btn btn-brand"
+            className="btn btn-brand w-full xs:w-auto text-center"
             href={`mailto:${profile.email}`}
           >
             Email Belal
@@ -394,7 +394,7 @@ export function Contact({ profile }: ContactProps) {
             <motion.a
               whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.97 }}
-              className="btn bg-white/10 text-white hover:bg-white/20 border border-white/15"
+              className="btn bg-white/10 text-white hover:bg-white/20 border border-white/15 w-full xs:w-auto text-center"
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
@@ -405,7 +405,7 @@ export function Contact({ profile }: ContactProps) {
           <motion.a
             whileHover={{ scale: 1.03, y: -2 }}
             whileTap={{ scale: 0.97 }}
-            className="btn border border-white/20 text-white/90 hover:border-brand hover:text-brand"
+            className="btn border border-white/20 text-white/90 hover:border-brand hover:text-brand w-full xs:w-auto text-center"
             href="#credentials"
           >
             View All Credentials
@@ -413,7 +413,7 @@ export function Contact({ profile }: ContactProps) {
           <motion.a
             whileHover={{ scale: 1.03, y: -2 }}
             whileTap={{ scale: 0.97 }}
-            className="btn border border-white/20 text-white/90 hover:border-brand hover:text-brand"
+            className="btn border border-white/20 text-white/90 hover:border-brand hover:text-brand w-full xs:w-auto text-center"
             href={profile.cvLink || "/Md_Belal_Ashraf_cv.pdf"}
             download
           >
@@ -421,7 +421,7 @@ export function Contact({ profile }: ContactProps) {
           </motion.a>
         </motion.div>
 
-        <p className="mt-12 text-xs text-white/50 border-t border-white/10 pt-6">
+        <p className="mt-10 sm:mt-12 text-xs text-white/50 border-t border-white/10 pt-6 leading-relaxed">
           {profile.email} · {profile.phone} · {profile.location}
         </p>
       </div>

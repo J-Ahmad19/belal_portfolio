@@ -55,7 +55,7 @@ export default function Credentials({ credentials }: CredentialsProps) {
         </p>
       </motion.div>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 sm:mt-12 grid gap-5 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {credentials.map((item, index) => {
           const hasLink = Boolean(item.driveLink);
           const viewUrl = hasLink ? getDriveViewUrl(item.driveLink) : "";
@@ -66,43 +66,43 @@ export default function Credentials({ credentials }: CredentialsProps) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: index * 0.06 }}
-              whileHover={{ y: -5 }}
-              className="group flex flex-col justify-between border border-[var(--line)] bg-surface p-6 shadow-sm transition-all duration-300 hover:border-brand hover:shadow-md rounded-sm"
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+              whileHover={{ y: -4 }}
+              className="group flex flex-col justify-between border border-[var(--line)] bg-surface p-5 sm:p-6 shadow-sm transition-all duration-300 hover:border-brand hover:shadow-md rounded-sm"
             >
               <div>
                 <div className="flex items-center justify-between gap-2">
                   <span
-                    className={`px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded-sm ${getCategoryBadge(
+                    className={`px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded-sm truncate max-w-[170px] ${getCategoryBadge(
                       item.category
                     )}`}
                   >
                     {item.category}
                   </span>
-                  <span className="text-xs font-bold text-ink/70">{item.date}</span>
+                  <span className="text-xs font-bold text-ink/70 shrink-0">{item.date}</span>
                 </div>
 
-                <h3 className="mt-4 text-lg font-bold leading-snug text-ink transition-colors group-hover:text-ink">
+                <h3 className="mt-3.5 text-base sm:text-lg font-bold leading-snug text-ink transition-colors group-hover:text-ink">
                   {item.title}
                 </h3>
 
-                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-ink/70">
+                <p className="mt-1 text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-ink/70">
                   {item.issuer}
                 </p>
 
                 {item.credentialId && (
-                  <p className="mt-1 text-[11px] font-mono text-body">
+                  <p className="mt-1 text-[10px] sm:text-[11px] font-mono text-body truncate">
                     ID: {item.credentialId}
                   </p>
                 )}
 
-                <p className="mt-3 text-xs leading-relaxed text-body">
+                <p className="mt-2.5 text-xs leading-relaxed text-body line-clamp-4">
                   {item.description}
                 </p>
               </div>
 
               {hasLink && (
-                <div className="mt-6 border-t border-[var(--line)] pt-4 flex items-center gap-2">
+                <div className="mt-5 border-t border-[var(--line)] pt-4 flex items-center gap-2">
                   <motion.a
                     href={viewUrl}
                     target="_blank"
@@ -110,9 +110,9 @@ export default function Credentials({ credentials }: CredentialsProps) {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     aria-label={`Open ${item.title} on Google Drive (new tab)`}
-                    className="inline-flex flex-1 items-center justify-between border border-[var(--line)] bg-soft/50 px-3.5 py-2 text-xs font-bold uppercase tracking-wider text-ink transition-all hover:border-brand hover:bg-brand hover:text-[#111110] rounded-sm"
+                    className="inline-flex flex-1 items-center justify-between border border-[var(--line)] bg-soft/60 px-3 py-1.5 sm:px-3.5 sm:py-2 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-ink transition-all hover:border-brand hover:bg-brand hover:text-[#111110] rounded-sm"
                   >
-                    <span className="flex items-center gap-1.5">
+                    <span className="flex items-center gap-1.5 truncate">
                       <svg
                         className="h-3.5 w-3.5 shrink-0"
                         fill="currentColor"
@@ -121,7 +121,7 @@ export default function Credentials({ credentials }: CredentialsProps) {
                       >
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm1 7V3.5L18.5 7H15zM8 17h8v2H8v-2zm0-4h8v2H8v-2zm0-4h4v2H8V9z" />
                       </svg>
-                      <span>View Doc</span>
+                      <span className="truncate">View Doc</span>
                     </span>
                     <svg
                       className="h-3.5 w-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -134,7 +134,7 @@ export default function Credentials({ credentials }: CredentialsProps) {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                       />
                     </svg>
                   </motion.a>
@@ -147,7 +147,7 @@ export default function Credentials({ credentials }: CredentialsProps) {
                         url: item.driveLink,
                       })
                     }
-                    className="border border-[var(--line)] bg-surface px-2.5 py-2 text-xs font-semibold text-body hover:text-ink hover:border-brand rounded-sm"
+                    className="border border-[var(--line)] bg-surface px-2.5 py-1.5 sm:py-2 text-[11px] sm:text-xs font-semibold text-body hover:text-ink hover:border-brand rounded-sm shrink-0"
                     title="Quick preview modal"
                   >
                     Preview
@@ -163,18 +163,18 @@ export default function Credentials({ credentials }: CredentialsProps) {
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.45, delay: 0.2 }}
-        className="mt-8 flex flex-col items-start justify-between gap-4 border border-[var(--line)] bg-surface p-6 sm:flex-row sm:items-center rounded-sm shadow-sm"
+        transition={{ duration: 0.45, delay: 0.15 }}
+        className="mt-8 flex flex-col items-start justify-between gap-4 border border-[var(--line)] bg-surface p-5 sm:p-6 sm:flex-row sm:items-center rounded-sm shadow-sm"
       >
-        <div className="flex items-center gap-3">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand text-[#111110] font-bold text-sm shrink-0">
+        <div className="flex items-start sm:items-center gap-3">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand text-[#111110] font-bold text-sm shrink-0 mt-0.5 sm:mt-0">
             ✓
           </span>
           <div>
             <p className="text-sm font-bold text-ink">
               All {credentials.length} credentials independently verifiable
             </p>
-            <p className="text-xs text-body">
+            <p className="text-xs text-body mt-0.5 leading-relaxed">
               Stored securely on Google Drive with permanent read access for recruiters, project heads & HR.
             </p>
           </div>
@@ -184,7 +184,7 @@ export default function Credentials({ credentials }: CredentialsProps) {
           whileTap={{ scale: 0.97 }}
           href="/Md_Belal_Ashraf_cv.pdf"
           download
-          className="btn btn-ink py-2 text-xs uppercase tracking-wider"
+          className="btn btn-ink w-full sm:w-auto py-2 text-center text-xs uppercase tracking-wider shrink-0"
         >
           Download Complete CV
         </motion.a>

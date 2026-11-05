@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
   font-family: var(--font-gothic), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 *:focus-visible {
@@ -51,7 +53,7 @@ body {
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 font-bold transition-all duration-200 text-sm tracking-wide rounded-sm;
+    @apply inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 font-bold transition-all duration-200 text-xs sm:text-sm tracking-wide rounded-sm min-h-[42px] touch-manipulation;
   }
   .btn-brand {
     @apply bg-brand text-[#111110] hover:bg-brandStrong shadow-sm;
@@ -60,9 +62,9 @@ body {
     @apply bg-ink text-onink hover:opacity-90 shadow-sm;
   }
   .section {
-    @apply mx-auto max-w-6xl px-6 py-28;
+    @apply mx-auto max-w-6xl px-4 xs:px-6 py-14 sm:py-20 md:py-28;
   }
   .h2 {
-    @apply text-3xl sm:text-4xl md:text-5xl font-black text-ink tracking-tight;
+    @apply text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-black text-ink tracking-tight break-words;
   }
 }

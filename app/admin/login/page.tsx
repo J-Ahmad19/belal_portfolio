@@ -49,7 +49,7 @@ function LoginForm() {
   };
 
   return (
-    <div className="w-full max-w-md rounded-lg border border-[#242422] bg-[#171716] p-8 shadow-2xl">
+    <div className="w-full max-w-md rounded-lg border border-[#242422] bg-[#171716] p-6 sm:p-8 shadow-2xl">
       {/* Header Branding */}
       <div className="flex flex-col items-center text-center">
         <div className="relative mb-4 h-16 w-16 overflow-hidden rounded-full ring-2 ring-[#FFE202] ring-offset-4 ring-offset-[#171716]">
