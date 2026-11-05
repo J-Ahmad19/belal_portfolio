@@ -1,0 +1,16 @@
+{
+  "id": "mepf-services",
+  "groupName": "MEPF & Building Services Integration",
+  "skills": [
+    "MEPF Coordination (HVAC, Electrical, Plumbing, Firefighting)",
+    "Civil-MEPF Clash Detection & Resolution",
+    "Structural Penetrations & Sleeve Verification",
+    "MEP Shaft Planning & Duct Clearance",
+    "Combined Services Coordination Drawings",
+    "Testing, Commissioning & Inspection Workflows"
+  ],
+  "certificateLink": "https://drive.google.com/file/d/1VTBBZzObqlY15BDMRS-A6HSowpXcyS8o/view?usp=sharing",
+  "certificateLabel": "MEPF Cert (CD/WB/HVAC/25/242) ↗",
+  "order": 7,
+  "visible": true
+}

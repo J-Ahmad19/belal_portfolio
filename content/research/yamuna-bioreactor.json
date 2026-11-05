@@ -1,28 +1,28 @@
 {
   "id": "yamuna-bioreactor",
-  "title": "Zero-aeration algal-bacterial bioreactor for Yamuna water",
-  "meta": "IIT Delhi Changemakers Bootcamp 2025, with Prof. Jay Dhariwal and Prof. Anushree Malik",
-  "description": "A two-stage system pairs physical pre-filtration with an algal-bacterial consortium that makes its own oxygen, so no aeration is needed. It cut energy use an estimated 40 to 60% against activated sludge and brought nitrate under the WHO limit within 24 hours.",
+  "title": "Two-Stage Algal-Bacterial Consortium (ABC) Bioreactor for Yamuna River Wastewater Remediation",
+  "meta": "IIT Delhi Changemakers Summer Bootcamp 2025 · Under Prof. Jay Dhariwal & Prof. Anushree Malik (CRDT)",
+  "description": "Designed and operated a zero-aeration Algal-Bacterial Consortium (ABC) photobioreactor addressing Delhi's 170M+ tons/day untreated wastewater crisis (5,300% phosphate elevation above permissible limits). The two-stage system combines physical pre-filtration (gravel, sand, activated carbon, muslin cloth) with biological remediation using a symbiotic consortium of cyanobacteria, algae, and heterotrophic bacteria. Photosynthetic oxygen generation eliminated external mechanical aeration, achieving 40–60% energy savings over conventional activated sludge processes. Operated a 2L photobioreactor at ~8498 Lux and 60–80 RPM; prepared inoculum via centrifugation at 5000 RPM with moisture analysis (89.6%) targeting 1 g/L dry solids MLSS; quantified nutrient kinetics via UV-VIS spectrophotometry (Barton's reagent @470nm for phosphate, salicylic acid @410nm for nitrate with R² >0.99 calibration curves).",
   "resultRows": [
     {
-      "label": "Nitrate",
-      "range": "41.46 to 1.46 ppm",
+      "label": "Nitrate (NO₃⁻)",
+      "range": "41.46 → 1.46 ppm (WHO standard <10 ppm met in 24h)",
       "percentage": "96.5%"
     },
     {
-      "label": "Phosphate",
-      "range": "4.09 to 0.57 ppm",
+      "label": "Phosphate (PO₄³⁻)",
+      "range": "4.09 → 0.57 ppm (Significant remediation of 5300% excess)",
       "percentage": "86.1%"
     },
     {
-      "label": "TDS",
-      "range": "2894 to 1956 ppm",
+      "label": "Total Dissolved Solids (TDS)",
+      "range": "2894.4 → 1956.4 ppm (Ionic precipitation & assimilation)",
       "percentage": "32.4%"
     }
   ],
-  "note": "Selected for IIT Delhi Open House 2025 and featured in The Indian Express.",
+  "note": "Featured in The Indian Express for sustainable river restoration; selected among top innovations for exhibition at the IIT Delhi Open House 2025 Makerspace Showcase (presented to 300+ attendees); received Letter of Appreciation from Prof. Jay Dhariwal.",
   "certificateLink": "https://drive.google.com/file/d/11QRZsCP2xUrYHhw65rsezrwWE27NwCxV/view?usp=sharing",
-  "certificateLabel": "IIT Delhi Project Certificate",
+  "certificateLabel": "IIT Delhi Research Certificate",
   "order": 1,
   "visible": true
 }

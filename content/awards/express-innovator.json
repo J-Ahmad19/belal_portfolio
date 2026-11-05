@@ -1,8 +1,10 @@
 {
   "id": "express-innovator",
-  "title": "Featured Innovator",
-  "description": "The Indian Express, 2025. Aqua Nova wastewater treatment innovation.",
-  "year": "2025",
-  "order": 7,
+  "title": "Featured Innovator – The Indian Express",
+  "description": "Featured in The Indian Express (June 2025) for designing an innovative zero-aeration algal-bacterial consortium bioreactor at IIT Delhi addressing Delhi's 170M+ tons/day untreated wastewater crisis.",
+  "year": "June 2025",
+  "driveLink": "https://indianexpress.com/article/cities/delhi/innovators-develop-solution-at-iit-delhi-to-clean-yamuna-water-9421111/",
+  "linkText": "Read Article ↗",
+  "order": 2,
   "visible": true
 }

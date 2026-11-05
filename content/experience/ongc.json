@@ -1,19 +1,19 @@
 {
-  "id": "ongc",
-  "organisation": "ONGC",
+  "organisation": "Oil and Natural Gas Corporation (ONGC)",
   "role": "Engineering Services (Civil) Intern",
-  "location": "Ankleshwar Asset, Gujarat",
+  "location": "Ankleshwar Asset, Gujarat, India",
   "year": "2026",
   "bulletPoints": [
-    "Prepared BOQ and measurement sheets for 90+ items with CPWD SOR and rate analysis: 177.54 cum excavation, 455.73 cum RCC M25, 2,500+ sqm finishes.",
-    "Ran deviation analysis of estimated against tendered rates across multiple RA bills.",
-    "Applied IS 456, IS 10262, IS 3495 and IS 1786 for material testing; reviewed NDT reports.",
-    "Earned an official recommendation letter citing technical maturity rarely seen in undergraduate trainees."
+    "BOQ & Quantity Estimation: Prepared detailed measurement sheets and abstract costing for 90+ work items using CPWD SOR and project-specific Rate Analysis, quantifying 177.54 cum excavation, 455.73 cum RCC M25, and over 2500 sqm of finishes on the CPF Gandhar Electrical Office Building.",
+    "Cost Deviation Analysis: Prepared deviation statements comparing estimated vs. tendered rates across multiple RAs, verified Rate Analysis using site measurement records against contractual rates, and tracked variations across structures & finishes.",
+    "Quality Assurance & Standards: Applied IS Code protocols (IS 456, IS 10262, IS 3495, IS 1786) for material testing; reviewed non-destructive test (NDT) reports and maintenance logs against project specifications.",
+    "Drawing to Site Execution: Interpreted Architectural and Structural GFC drawings for execution sequencing and MEP coordination; monitored formwork, PCC/RCC concreting, and reinforcement activities on site.",
+    "Plant Infrastructure Integration: Observed the integration of crude oil headers, firefighting systems, and drainage networks within civil designs in an active hydrocarbon facility."
   ],
   "certificateLink": "https://drive.google.com/file/d/1RDKQFnbjVqjfPQCgV10ag60y5zvDDL8H/view?usp=sharing",
-  "certificateLabel": "ONGC Internship Certificate",
+  "certificateLabel": "ONGC Industrial Certificate",
   "lorLink": "https://drive.google.com/file/d/12u1yt3j9VShZIqoBAlrunRZr22wBCuFo/view?usp=sharing",
-  "lorLabel": "ONGC Recommendation (LOR)",
+  "lorLabel": "ONGC Letter of Recommendation",
   "order": 2,
   "visible": true
 }

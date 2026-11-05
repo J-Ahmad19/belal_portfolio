@@ -1,11 +1,15 @@
 {
   "id": "structures-site",
-  "groupName": "Structures and site",
+  "groupName": "Structural Engineering & Detailing",
   "skills": [
-    "GFC drawings",
-    "PT beam inspection",
-    "Formwork",
-    "PCC/RCC concreting"
+    "STR & ARCH GFC Drawing Interpretation",
+    "Reinforcement Inspection (Fe250 to Fe550)",
+    "PT Beam Profile Duct Placements & Grouting",
+    "Column Schedules & Marking Plans",
+    "Framing Plans & Slab Cut-out Plans",
+    "Shear Wall Schedules & DG Raft Detailing",
+    "Link Bars, Stirrups, Lap Lengths & Anchorage (Ld)",
+    "Cover Block Verification & Clear Spacing"
   ],
   "order": 3,
   "visible": true

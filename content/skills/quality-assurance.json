@@ -1,13 +1,18 @@
 {
   "id": "quality-assurance",
-  "groupName": "Quality assurance",
+  "groupName": "Quality Assurance & Compliance (QA/QC)",
   "skills": [
-    "IS codes",
-    "NCR tracking",
-    "WIR review",
-    "Batching plant calibration",
-    "Mix design checks"
+    "IS Code Compliance (IS 456, IS 10262, IS 3495, IS 1786)",
+    "Batching Plant Calibration (Cement, Aggregates, Admixtures)",
+    "Concrete Mix Design Verification & Moisture Correction",
+    "Compressive Strength Cube Testing",
+    "Non-Conformance Reports (NCR Tracking to Closure)",
+    "Work Inspection Requests (WIR Review & Sign-off)",
+    "Non-Destructive Testing (NDT Report Review)",
+    "Silt Content Determination & Cement Setting Time"
   ],
+  "certificateLink": "https://drive.google.com/file/d/1A11mJLZ4ih8WxOiX5XT-LyCv6AWmJYtg/view?usp=sharing",
+  "certificateLabel": "DLF QA/QC Verified ↗",
   "order": 2,
   "visible": true
 }

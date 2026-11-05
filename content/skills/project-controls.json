@@ -1,0 +1,15 @@
+{
+  "id": "project-controls",
+  "groupName": "Project Controls & Documentation",
+  "skills": [
+    "Deviation Statements & Variation Analysis",
+    "RA Billing & Measurement Reconciliation",
+    "Project Quality Plan (PQP) Maintenance",
+    "Drawing Register & Revision Control",
+    "As-Built Documentation",
+    "Daily Progress Reports (DPR)",
+    "Technical Summaries & Site Records"
+  ],
+  "order": 5,
+  "visible": true
+}

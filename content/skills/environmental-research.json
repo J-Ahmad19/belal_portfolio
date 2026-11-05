@@ -1,0 +1,17 @@
+{
+  "id": "environmental-research",
+  "groupName": "Environmental Engineering & Research",
+  "skills": [
+    "Zero-Aeration Photobioreactor Design",
+    "Algal-Bacterial Consortium (ABC) Cultivation",
+    "UV-VIS Spectrophotometry (Barton's & Salicylic Acid)",
+    "Calibration Curves (R² > 0.99) & Beer-Lambert Law",
+    "Centrifugation (5000 RPM) & Biomass Inoculum",
+    "Moisture Analysis (89.6%) & Target MLSS",
+    "Water Quality Assays (pH, TDS, Conductivity, Nitrate, Phosphate)"
+  ],
+  "certificateLink": "https://drive.google.com/file/d/11QRZsCP2xUrYHhw65rsezrwWE27NwCxV/view?usp=sharing",
+  "certificateLabel": "IIT Delhi Research ↗",
+  "order": 6,
+  "visible": true
+}

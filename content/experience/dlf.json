@@ -1,13 +1,14 @@
 {
-  "id": "dlf",
   "organisation": "DLF Limited",
-  "role": "Projects Department Intern",
-  "location": "Data Center-03, Sector 143A, Noida",
+  "role": "Projects Execution & Management Intern",
+  "location": "Sector 143A Noida, Uttar Pradesh, India",
   "year": "2026",
   "bulletPoints": [
-    "Verified reinforcement against structural GFC drawings: column layouts, beam details, PT duct profiles and MEP cut-outs, steel grades Fe250 to Fe550.",
-    "Reviewed batching plant calibration and mix designs; ran cube tests and tracked NCRs to closure.",
-    "Inspected formwork, VDF levelling, PT pocket grouting, plaster and curing; checked WIRs on the 6th to 7th floor lift."
+    "Structural Engineering & Reinforcement Inspection: Verified reinforcement as per STR GFC drawings, column layouts, beam details, PT beam profile duct placements, and MEP cut-outs across Fe250–Fe550 grades for PT beams, columns, shear walls, DG raft, and slabs.",
+    "Critical Structural Detailing: Inspected link bars, stirrups, lap lengths, development lengths (Ld), anchorage, and cover blocks from 6th to 7th floor vertical member construction.",
+    "Quality Assurance & QA/QC Compliance: Validated batching plant calibration reports for aggregate, cement, and admixture scales; monitored concrete mix designs (W/C ratio & mix proportions), performed compressive cube testing, and tracked Non-Conformance Reports (NCRs) to closure.",
+    "Site Execution & Finishing: Inspected formwork alignment, stability, VDF floor levelling, PT pocket grouting, plaster quality, surface finish, and curing protocols on the 28 MW Data Center-03 (G+8 Commercial Building).",
+    "Documentation Workflow: Checked Work Inspection Requests (WIRs) and maintained rigorous documentation across WIR, SOR, NCR, and approved GFC drawings."
   ],
   "certificateLink": "https://drive.google.com/file/d/1A11mJLZ4ih8WxOiX5XT-LyCv6AWmJYtg/view?usp=sharing",
   "certificateLabel": "DLF Internship Certificate",

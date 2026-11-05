@@ -1,13 +1,20 @@
 {
   "id": "estimation-costing",
-  "groupName": "Estimation and costing",
+  "groupName": "Estimation & Costing",
   "skills": [
-    "BOQ",
-    "Rate analysis",
-    "Deviation analysis",
-    "CPWD SOR",
-    "Tender analysis"
+    "BOQ Preparation (90+ items)",
+    "Rate Analysis (RA)",
+    "Cost Deviation Analysis",
+    "Variation Tracking",
+    "Measurement Sheets",
+    "Abstract Costing",
+    "CPWD Schedule of Rates (SOR)",
+    "Quantity Estimation",
+    "Cost Control",
+    "Tender Analysis"
   ],
+  "certificateLink": "https://drive.google.com/file/d/1RDKQFnbjVqjfPQCgV10ag60y5zvDDL8H/view?usp=sharing",
+  "certificateLabel": "ONGC Verified BOQ ↗",
   "order": 1,
   "visible": true
 }

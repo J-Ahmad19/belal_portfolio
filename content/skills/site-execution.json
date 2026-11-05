@@ -1,0 +1,16 @@
+{
+  "id": "site-execution",
+  "groupName": "Site Execution & Operations",
+  "skills": [
+    "Formwork Inspection, Alignment & Stability",
+    "Layout Verification & Dimensional Checking",
+    "PCC & RCC Concreting Supervision",
+    "Vacuum Dewatered Flooring (VDF Levelling)",
+    "PT Pocket Grouting & Plaster Quality",
+    "Curing Monitoring & Surface Finishing",
+    "Subcontractor Coordination & Safety Protocols",
+    "Daily Progress Monitoring"
+  ],
+  "order": 4,
+  "visible": true
+}

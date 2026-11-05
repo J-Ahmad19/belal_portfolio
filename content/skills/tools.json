@@ -1,14 +1,17 @@
 {
   "id": "tools",
-  "groupName": "Tools",
+  "groupName": "Software & Professional Tools",
   "skills": [
-    "AutoCAD 2D (Certified)",
-    "Advanced Excel",
-    "UV-VIS spectrophotometry",
-    "MEPF coordination"
+    "AutoCAD 2020 2D (Certified UC-d5c84817)",
+    "Advanced Excel (Formulas, Pivot, Tracking Sheets)",
+    "UV-VIS Spectrophotometer Operation",
+    "PDF Mark-up & Review Tools (Bluebeam / Acrobat)",
+    "Technical Documentation & WIR Workflows",
+    "Interdisciplinary Cross-Functional Coordination",
+    "S.M. ASCE Professional Network"
   ],
   "certificateLink": "https://drive.google.com/file/d/1z-zXBSykrv9h8qXm09j4oDZsslwPUbk7/view?usp=sharing",
-  "certificateLabel": "AutoCAD Cert ↗",
-  "order": 4,
+  "certificateLabel": "AutoCAD Credential ↗",
+  "order": 8,
   "visible": true
 }
