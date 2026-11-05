@@ -1,3 +1,5 @@
+import KeystaticApp from "./keystatic";
+
 export const metadata = {
   title: "Admin Panel · Belal Ashraf Portfolio",
   robots: {
@@ -7,11 +9,6 @@ export const metadata = {
   },
 };
 
-export default function KeystaticLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return children;
+export default function KeystaticLayout() {
+  return <KeystaticApp />;
 }
-
