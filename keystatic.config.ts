@@ -1,30 +1,27 @@
 import { config, fields, collection, singleton } from "@keystatic/core";
 
-// Switch between local filesystem in development and GitHub mode in production
-// Ensure both client browser and server resolve to GitHub mode in production
+// In development (npm run dev on localhost), always use local filesystem
+// In production (deployed on Vercel), always use GitHub mode
 const isProduction = process.env.NODE_ENV === "production";
-const isLocalExplicit =
-  process.env.NEXT_PUBLIC_KEYSTATIC_STORAGE === "local" ||
-  process.env.KEYSTATIC_STORAGE === "local";
-
-const useGitHub =
-  !isLocalExplicit &&
-  (isProduction ||
-    process.env.NEXT_PUBLIC_KEYSTATIC_STORAGE === "github" ||
-    process.env.KEYSTATIC_STORAGE === "github");
+const storageKind: "github" | "local" =
+  process.env.NEXT_PUBLIC_KEYSTATIC_STORAGE === "github" ||
+  (isProduction && process.env.NEXT_PUBLIC_KEYSTATIC_STORAGE !== "local" && process.env.KEYSTATIC_STORAGE !== "local")
+    ? "github"
+    : "local";
 
 export default config({
-  storage: useGitHub
-    ? {
-        kind: "github",
-        repo: {
-          owner: process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_OWNER || "J-Ahmad19",
-          name: process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_REPO || "belal_portfolio",
+  storage:
+    storageKind === "github"
+      ? {
+          kind: "github",
+          repo: {
+            owner: process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_OWNER || "J-Ahmad19",
+            name: process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_REPO || "belal_portfolio",
+          },
+        }
+      : {
+          kind: "local",
         },
-      }
-    : {
-        kind: "local",
-      },
   ui: {
     brand: {
       name: "Belal Ashraf · Portfolio Admin",
@@ -482,4 +479,3 @@ export default config({
     }),
   },
 });
-
