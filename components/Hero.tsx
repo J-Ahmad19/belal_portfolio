@@ -30,10 +30,25 @@ export default function Hero({ profile, credentialsCount }: HeroProps) {
     return () => ctx.revert();
   }, []);
 
-  // Split headline gracefully into lines for the GSAP overflow mask reveal
-  const headlineLines = profile.headline.includes("building quality")
-    ? ["Civil engineer", "building quality", "into every pour."]
-    : profile.headline.split(/\.\s+/).filter(Boolean);
+  // Split headline dynamically into balanced lines for the GSAP overflow mask reveal
+  const getHeadlineLines = (text: string): string[] => {
+    if (!text) return [];
+    if (text.includes("\n")) {
+      return text.split("\n").map((l) => l.trim()).filter(Boolean);
+    }
+    const sentences = text.split(/(?<=\.)\s+/).map((l) => l.trim()).filter(Boolean);
+    if (sentences.length > 1) return sentences;
+
+    const words = text.split(/\s+/).filter(Boolean);
+    if (words.length <= 4) return [text];
+
+    const line1 = words.slice(0, 2).join(" ");
+    const line2 = words.slice(2, 4).join(" ");
+    const line3 = words.slice(4).join(" ");
+    return [line1, line2, line3].filter(Boolean);
+  };
+
+  const headlineLines = getHeadlineLines(profile.headline);
 
   return (
     <section

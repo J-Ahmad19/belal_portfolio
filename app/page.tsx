@@ -14,8 +14,9 @@ import {
   getAwards,
 } from "@/lib/content";
 
-// Static generation with 60s ISR for instant loads and live content updates
-export const revalidate = 60;
+// Dynamic rendering to immediately reflect CMS edits without cache delay
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function Home() {
   const [profile, stats, experiences, research, credentials, skills, awards] =
