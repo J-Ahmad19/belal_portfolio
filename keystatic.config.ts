@@ -1,8 +1,17 @@
 import { config, fields, collection, singleton } from "@keystatic/core";
 
 // Switch between local filesystem in development and GitHub mode in production
+// Ensure both client browser and server resolve to GitHub mode in production
 const isProduction = process.env.NODE_ENV === "production";
-const useGitHub = isProduction && process.env.KEYSTATIC_STORAGE === "github";
+const isLocalExplicit =
+  process.env.NEXT_PUBLIC_KEYSTATIC_STORAGE === "local" ||
+  process.env.KEYSTATIC_STORAGE === "local";
+
+const useGitHub =
+  !isLocalExplicit &&
+  (isProduction ||
+    process.env.NEXT_PUBLIC_KEYSTATIC_STORAGE === "github" ||
+    process.env.KEYSTATIC_STORAGE === "github");
 
 export default config({
   storage: useGitHub
