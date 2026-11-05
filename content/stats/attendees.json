@@ -1,0 +1,9 @@
+{
+  "id": "attendees",
+  "value": 300,
+  "decimals": 0,
+  "suffix": "+",
+  "label": "attendees at the IIT Delhi Open House",
+  "order": 3,
+  "visible": true
+}

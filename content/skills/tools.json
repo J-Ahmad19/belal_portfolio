@@ -1,0 +1,14 @@
+{
+  "id": "tools",
+  "groupName": "Tools",
+  "skills": [
+    "AutoCAD 2D (Certified)",
+    "Advanced Excel",
+    "UV-VIS spectrophotometry",
+    "MEPF coordination"
+  ],
+  "certificateLink": "https://drive.google.com/file/d/1z-zXBSykrv9h8qXm09j4oDZsslwPUbk7/view?usp=sharing",
+  "certificateLabel": "AutoCAD Cert ↗",
+  "order": 4,
+  "visible": true
+}

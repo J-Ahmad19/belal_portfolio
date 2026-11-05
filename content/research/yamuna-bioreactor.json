@@ -1,0 +1,28 @@
+{
+  "id": "yamuna-bioreactor",
+  "title": "Zero-aeration algal-bacterial bioreactor for Yamuna water",
+  "meta": "IIT Delhi Changemakers Bootcamp 2025, with Prof. Jay Dhariwal and Prof. Anushree Malik",
+  "description": "A two-stage system pairs physical pre-filtration with an algal-bacterial consortium that makes its own oxygen, so no aeration is needed. It cut energy use an estimated 40 to 60% against activated sludge and brought nitrate under the WHO limit within 24 hours.",
+  "resultRows": [
+    {
+      "label": "Nitrate",
+      "range": "41.46 to 1.46 ppm",
+      "percentage": "96.5%"
+    },
+    {
+      "label": "Phosphate",
+      "range": "4.09 to 0.57 ppm",
+      "percentage": "86.1%"
+    },
+    {
+      "label": "TDS",
+      "range": "2894 to 1956 ppm",
+      "percentage": "32.4%"
+    }
+  ],
+  "note": "Selected for IIT Delhi Open House 2025 and featured in The Indian Express.",
+  "certificateLink": "https://drive.google.com/file/d/11QRZsCP2xUrYHhw65rsezrwWE27NwCxV/view?usp=sharing",
+  "certificateLabel": "IIT Delhi Project Certificate",
+  "order": 1,
+  "visible": true
+}

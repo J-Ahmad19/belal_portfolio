@@ -1,0 +1,9 @@
+{
+  "id": "nitrate",
+  "value": 96.5,
+  "decimals": 1,
+  "suffix": "%",
+  "label": "nitrate removed by the ABC bioreactor in 48 hours",
+  "order": 1,
+  "visible": true
+}

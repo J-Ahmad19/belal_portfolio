@@ -1,0 +1,13 @@
+{
+  "id": "estimation-costing",
+  "groupName": "Estimation and costing",
+  "skills": [
+    "BOQ",
+    "Rate analysis",
+    "Deviation analysis",
+    "CPWD SOR",
+    "Tender analysis"
+  ],
+  "order": 1,
+  "visible": true
+}

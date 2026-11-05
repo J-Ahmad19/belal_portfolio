@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: #FAFAFA;
+  --soft: #F1F1EF;
+  --ink: #111110;
+  --body: #4E4E4A;
+  --onink: #FFFFFF;
+  --line: #E5E5E2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #0C0C0C;
+    --soft: #171716;
+    --ink: #F7F7F5;
+    --body: #A1A19C;
+    --onink: #0C0C0C;
+    --line: #242422;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--surface);
+  color: var(--body);
+  font-family: var(--font-gothic), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus-visible {
+  outline: 2px solid #FFE202;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 font-bold transition-all duration-200 text-sm tracking-wide rounded-sm;
+  }
+  .btn-brand {
+    @apply bg-brand text-[#111110] hover:bg-brandStrong shadow-sm;
+  }
+  .btn-ink {
+    @apply bg-ink text-onink hover:opacity-90 shadow-sm;
+  }
+  .section {
+    @apply mx-auto max-w-6xl px-6 py-28;
+  }
+  .h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl font-black text-ink tracking-tight;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "boq",
+  "value": 90,
+  "decimals": 0,
+  "suffix": "+",
+  "label": "work items in the BOQ prepared at ONGC",
+  "order": 2,
+  "visible": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "structures-site",
+  "groupName": "Structures and site",
+  "skills": [
+    "GFC drawings",
+    "PT beam inspection",
+    "Formwork",
+    "PCC/RCC concreting"
+  ],
+  "order": 3,
+  "visible": true
+}

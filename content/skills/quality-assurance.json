@@ -1,0 +1,13 @@
+{
+  "id": "quality-assurance",
+  "groupName": "Quality assurance",
+  "skills": [
+    "IS codes",
+    "NCR tracking",
+    "WIR review",
+    "Batching plant calibration",
+    "Mix design checks"
+  ],
+  "order": 2,
+  "visible": true
+}
