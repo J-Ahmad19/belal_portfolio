@@ -65,8 +65,10 @@ export function middleware(request: NextRequest) {
     }
 
     // Unauthenticated page request -> Redirect to /admin/login
+    const nextDestination =
+      pathname === "/admin" || pathname === "/admin/" ? "/keystatic" : pathname;
     const loginUrl = new URL("/admin/login", request.url);
-    loginUrl.searchParams.set("next", pathname);
+    loginUrl.searchParams.set("next", nextDestination);
     return NextResponse.redirect(loginUrl);
   }
 

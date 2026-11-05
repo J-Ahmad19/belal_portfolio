@@ -1,4 +1,7 @@
-export const metadata = {
+import type { Metadata } from "next";
+import "../globals.css";
+
+export const metadata: Metadata = {
   title: "Admin Panel · Belal Ashraf Portfolio",
   robots: {
     index: false,
@@ -14,4 +17,3 @@ export default function AdminLayout({
 }) {
   return children;
 }
-
